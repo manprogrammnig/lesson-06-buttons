@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               //Raised Button
-              RaisedButton(
+              RaisedButton(//reemplazado por textbutton
                 color: Colors.blue,
                 child: Text(
                   'Raised Button',
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.favorite),
+          child: Icon(Icons.phone),// cambio de icons
         ),
       ),
     );
