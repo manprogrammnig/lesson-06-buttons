@@ -25,13 +25,46 @@ class MyApp extends StatelessWidget {
                   ) ,
                 ),
               ),
-             
-            
+              //Raised Button
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Raised Button',
+                      style: TextStyle(
+                        fontWeight: FontWeight.normal,
+                        color: Colors.white,
+                        fontSize: 20.0),
+               ),
+              onPressed: () {},
+            ),
+            // Icon Button
+            IconButton(
+              icon: Icon(Icons.volume_up),
+              tooltip: 'Increase volume by 10',
+              onPressed: () {},
+            ),
+            Text('Sound'),
+            // Flat Button
+            FlatButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              disabledColor: Colors.grey,
+              disabledTextColor: Colors.black,
+              padding: EdgeInsets.all(8.0),
+              splashColor: Colors.blueAccent,
+              onPressed: () {},
+              child: Text(
+                "Flat Button",
+                style: TextStyle(fontSize: 20.0),
+                  ),
+              ),
             ],
-           
           ),
-         
-        )
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.favorite),
+        ),
       ),
     );
   }
